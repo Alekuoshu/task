@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// Component for Card item
 class Cards extends Component {
 
     render(){
@@ -10,7 +11,11 @@ class Cards extends Component {
             <div className="card" id={this.props.index}>
                 <div className="card-header">
                     <h3>{ this.props.task.title }</h3>
-                    <span className="badge badge-pill badge-danger">
+                    <span className={`badge badge-pill 
+                    ${this.props.task.priority === 'low' ? 'badge-info' : ''}
+                    ${this.props.task.priority === 'medium' ? 'badge-warning' : ''}
+                    ${this.props.task.priority === 'high' ? 'badge-danger' : ''}`}
+                    >
                     { this.props.task.priority }
                     </span>
                 </div>

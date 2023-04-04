@@ -8,6 +8,7 @@ import Cards from './components/Cards';
 import Footer from './components/Footer';
 import  todos from './todos.json';
 
+// Main Component
 class App extends Component {
   constructor() {
     super();
@@ -17,6 +18,7 @@ class App extends Component {
     this.handleAddTodo = this.handleAddTodo.bind(this);
   }
 
+  // method for delete item
   removeTodo(index) {
     if(window.confirm("Are you sure you want delete it?")){
         this.setState({
@@ -27,6 +29,7 @@ class App extends Component {
     }
   }
 
+  // method for add item
   handleAddTodo(todo) {
     this.setState({
       todos: [...this.state.todos, todo]

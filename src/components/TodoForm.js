@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// Component for form section
 class TodoForm extends Component {
   constructor () {
     super();

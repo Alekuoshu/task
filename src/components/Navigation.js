@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 
+// Component for navigation section
 class Navigation extends Component {
     render(){
         return (

@@ -1,5 +1,9 @@
 /* styles to App */
 
+.container {
+  margin-bottom: 100px;
+}
+
 .navbar {
   padding: 15px !important;
 }
