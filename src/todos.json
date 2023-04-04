@@ -4,19 +4,19 @@
             "title": "Task 1",
             "responsible": "Mark",
             "description": "Lorem ipsu",
-            "priority": "low"
+            "priority": "3"
         },
         {
             "title": "Task 2",
             "responsible": "Ryan",
             "description": "Lorem ipsu 2",
-            "priority": "medium"
+            "priority": "1"
         },
         {
             "title": "Task 3",
             "responsible": "Joseph",
             "description": "Lorem ipsu 3",
-            "priority": "high"
+            "priority": "2"
         }
     ]
 }

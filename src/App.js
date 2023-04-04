@@ -38,7 +38,14 @@ class App extends Component {
 
   render() {
 
-    const tasks = this.state.todos.map((todo, i) => {
+    // order by priority:
+    var ToDos = this.state.todos;
+    
+    ToDos.sort(function(a, b) {
+      return b.priority - a.priority;
+    });
+
+    const tasks = ToDos.map((todo, i) => {
 
       return (
 

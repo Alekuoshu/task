@@ -8,7 +8,7 @@ class TodoForm extends Component {
       title: '',
       responsible: '',
       description: '',
-      priority: 'low'
+      priority: "1"
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,13 +18,16 @@ class TodoForm extends Component {
     e.preventDefault();
     if(this.state.title !== '' && this.state.description !== '' && this.state.responsible !== ''){
 
+      
       this.props.onAddTodo(this.state);
       this.setState({
         title: '',
         responsible: '',
         description: '',
-        priority: 'low'
+        priority: "1"
       });
+      document.getElementsByName("title")[0].focus();
+
 
     }else{
       window.alert("You should fill all fields!")
@@ -80,9 +83,9 @@ class TodoForm extends Component {
                 value={this.state.priority}
                 onChange={this.handleInputChange}
               >
-              <option>low</option>
-              <option>medium</option>
-              <option>high</option>
+              <option value="1">low</option>
+              <option value="2">medium</option>
+              <option value="3">high</option>
             </select>
           </div>
           <button type="submit" className="btn btn-primary">
